@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Inventory Management";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Inventory Management</h2>
+    <a href="@Url.Action("InventoryForm", "Inventory")" class="btn btn-primary mb-3">Add New Item</a>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>
+                        <a href="@Url.Action("InventoryForm", "Inventory", new { id = item.Id })" class="btn btn-warning">Edit</a>
+                        <a href="@Url.Action("DeleteItem", "Inventory", new { id = item.Id })" class="btn btn-danger" onclick="return confirm('Are you sure?');">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

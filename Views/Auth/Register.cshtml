@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Register</h3>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.ErrorMessages != null)
+                    {
+                        <div class="alert alert-danger">
+                            @foreach (var error in ViewBag.ErrorMessages)
+                            {
+                                <p>@error</p>
+                            }
+                        </div>
+                    }
+
+                    <form asp-controller="Auth" asp-action="Register" method="POST">
+                        <div class="form-group mb-3">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>                        
+                        <div class="form-group mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Register</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p>Already have an account? <a asp-controller="Auth" asp-action="Login">Login here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
