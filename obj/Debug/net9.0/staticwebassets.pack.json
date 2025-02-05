@@ -9,8 +9,20 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\wwwroot\\images\\itc-logo.png",
+      "PackagePath": "staticwebassets\\images\\itc-logo.png"
     },
     {
       "Id": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\wwwroot\\lib\\bootstrap\\LICENSE",

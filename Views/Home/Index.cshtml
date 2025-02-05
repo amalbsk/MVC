@@ -1,38 +1,31 @@
 ﻿@{
-    ViewData["Title"] = "Inventory Management";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="container mt-5">
-    <h2 class="text-center">Inventory Management</h2>
-    <a href="@Url.Action("InventoryForm", "Inventory")" class="btn btn-primary mb-3">Add New Item</a>
 
-    @if (TempData["Error"] != null)
-    {
-        <div class="alert alert-danger">@TempData["Error"]</div>
-    }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.Name</td>
-                    <td>@item.Quantity</td>
-                    <td>
-                        <a href="@Url.Action("InventoryForm", "Inventory", new { id = item.Id })" class="btn btn-warning">Edit</a>
-                        <a href="@Url.Action("DeleteItem", "Inventory", new { id = item.Id })" class="btn btn-danger" onclick="return confirm('Are you sure?');">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
+
+<div class="wrapper">
+    <div class="container ">
+        <div class="row h-100 align-items-center">
+            <!-- Left Side Image -->
+            <div class="col-md-6 side-image-container">
+                <div class="side-image"></div>
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="col-md-6 right">
+                <div class="input-box text-center p-5">
+                    <h1 class="display-4 mb-4">IMS</h1>
+                    <p class="lead mb-4">Efficiently manage your inventory with our system.</p>
+                    <div class="mt-4">
+                        <a asp-controller="Auth" asp-action="Login" class="btn btn-primary btn-lg">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,0 +1,117 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    min-height: calc(100vh - 60px); /* Subtract footer height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 60px; /* Add margin for footer */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Fixed footer height */
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    z-index: 1000; /* Ensure footer stays on top */
+    padding: 1rem 0;
+}
+
+
+.main {
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+    z-index: 2; /* Place content above overlay */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 15px;
+}
+
+.side-image-container {
+    height: 500px;
+    padding: 15px;
+}
+
+.side-image {
+    height: 100%;
+    background-image: url('/images/itc-logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.row {
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text p {
+    color: black;
+    font-size: 20px;
+}
+
+.right {
+    padding: 20px;
+}
+
+.input-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.submit:hover {
+    background: rgba(37, 95, 156, 0.937);
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .side-image {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .row {
+        max-width: 420px;
+        width: 100%;
+    }
+}

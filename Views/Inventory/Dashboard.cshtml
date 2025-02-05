@@ -1,0 +1,152 @@
+@model IEnumerable<Webapi.Models.Inventory>
+
+@{
+    ViewData["Title"] = "Inventory Management";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Inventory Management System</h2>
+
+    <!-- Search Form -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <form asp-controller="Inventory" asp-action="SearchAnItem" method="get" class="d-flex">
+                <input type="text" name="searchTerm" class="form-control me-2" placeholder="Search items...">
+                <button type="submit" class="btn btn-outline-primary">Search</button>
+            </form>
+
+        </div>
+        <div class="col-md-6 text-end">
+            <a href="@Url.Action("AddNewItem", "Inventory")" class="btn btn-primary">Add New Item</a>
+        </div>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info" role="alert">
+            No inventory items found.
+        </div>
+    }
+    else
+    {
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ItemId</td>
+                        <td>@item.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Price</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-warning btn-sm" onclick="openEditModal(@item.ItemId)">
+                                    <i class="fas fa-edit"></i> Edit
+                                </button>
+                                <button onclick="confirmDelete(@item.ItemId)" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash"></i> Delete
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    @Html.Partial("_EditItemModal")
+</div>
+
+
+@section Scripts {
+    <script>
+        function confirmDelete(itemId) {
+            if (confirm("Are you sure you want to delete this item?")) {
+                $.ajax({
+                    url: "/Inventory/DeleteItem?id=" + itemId, // Send ID as query parameter
+                    type: "DELETE", // Use DELETE request
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            location.reload();
+                        } else {
+                            alert("Error: " + response.message);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log("Error:", xhr.responseText);
+                        alert("An error occurred while deleting the item.");
+                    }
+                });
+            }
+        }
+
+        function openEditModal(itemId) {
+            // Fetch item details via API
+            $.ajax({
+                url: "/Inventory/GetItem?id=" + itemId,
+                type: "GET",
+                success: function (item) {
+                    $("#editItemId").val(itemId);
+                    $("#editItemName").val(item.name);
+                    $("#editItemQuantity").val(item.quantity);
+                    $("#editItemPrice").val(item.price);
+                    $("#editItemModal").modal("show");
+                },
+                error: function () {
+                    alert("Failed to load item details.");
+                }
+            });
+        }
+
+        $("#editItemForm").submit(function (event) {
+            event.preventDefault(); 
+
+            var itemId = $("#editItemId").val(); 
+            var updatedItem = {
+                name: $("#editItemName").val(),
+                quantity: parseInt($("#editItemQuantity").val()),
+                price: parseFloat($("#editItemPrice").val())
+            };
+
+            $.ajax({
+                url: "/Inventory/UpdateItem",
+                type: "POST", 
+                contentType: "application/json",
+                data: JSON.stringify({ id: itemId, model: updatedItem }),
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        location.reload();
+                    } else {
+                        alert("Error: " + response.message);
+                    }
+                },
+                error: function (xhr) {
+                    console.log("Error:", xhr.responseText);
+                    alert("An error occurred while updating the item.");
+                }
+            });
+
+            $("#editItemModal").modal("hide");
+        });
+
+
+    </script>
+}

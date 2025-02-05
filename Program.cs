@@ -34,7 +34,7 @@ app.UseAuthorization(); // Authorization middleware
 // Configure the default route
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Auth}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
  
 // Run the application
 app.Run();

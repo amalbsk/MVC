@@ -12,6 +12,7 @@ C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\InventoryM
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\InventoryManagementApp.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\InventoryManagementApp.pdb
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -22,6 +23,7 @@ C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.Identity.Client.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
@@ -33,6 +35,15 @@ C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.AspNetCore.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Sinks.File.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -151,14 +162,4 @@ C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\refint\Inv
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\InventoryManagementApp.pdb
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\InventoryManagementApp.genruntimeconfig.cache
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\ref\InventoryManagementApp.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.AspNetCore.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Sinks.Console.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\bin\Debug\net9.0\Serilog.Sinks.File.dll
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\l5ng4fv1if-d620n3ffqs.gz

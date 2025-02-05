@@ -47,7 +47,7 @@ public class AuthController : Controller
                 HttpContext.Session.SetString("AuthToken", token);
  
                 // Redirect to a secure page
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Dashboard", "Inventory");
 	}
 	else
             {

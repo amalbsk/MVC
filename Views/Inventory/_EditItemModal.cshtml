@@ -1,0 +1,34 @@
+<div class="modal fade" id="editItemModal" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editItemModalLabel">Edit Item</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editItemForm">
+                    <input type="hidden" id="editItemId" />
+                    
+                    <div class="mb-3">
+                        <label for="editItemName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="editItemName" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="editItemQuantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="editItemQuantity" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="editItemPrice" class="form-label">Price</label>
+                        <input type="number" step="0.01" class="form-control" id="editItemPrice" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Update Item</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

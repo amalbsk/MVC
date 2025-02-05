@@ -1,165 +1,213 @@
 using Microsoft.AspNetCore.Mvc;
 using Webapi.Models;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Text.Json;
 using Webapi.DTO;
-using System.Linq;
-using Microsoft.AspNetCore.Authorization;
-using AutoMapper;
-using Microsoft.Extensions.Logging;
 
-[Route("api/[controller]")]
-[ApiController]
-[Authorize] // Ensures that only authenticated users can access these endpoints
-public class InventoryController : ControllerBase
+
+public class InventoryController : Controller
 {
-    private readonly AppDbContext _context;
-    private readonly IMapper _mapper;
-    private readonly ILogger<InventoryController> _logger;
-
-    public InventoryController(
-        AppDbContext context, 
-        IMapper mapper,
-        ILogger<InventoryController> logger)
+    private readonly HttpClient _httpClient;
+    public InventoryController(IHttpClientFactory httpClientFactory)
     {
-        _context = context;
-        _mapper = mapper;
-        _logger = logger;
+        _httpClient = httpClientFactory.CreateClient("BackendAPI");
+    }
+    private void AddAuthorizationHeader()
+    {
+        var token = HttpContext.Session.GetString("AuthToken");
+        if (!string.IsNullOrEmpty(token))
+        {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        }
     }
 
-    // Get all items (authorized users only)
-    [HttpGet("Display items")]
-    public IActionResult GetItems()
+
+
+    public async Task<IActionResult> Dashboard()
     {
-        _logger.LogInformation("Retrieving all inventory items");
         try
         {
-            var items = _context.Inventories.ToList();
-            _logger.LogInformation("Retrieved {Count} items", items.Count);
-            return Ok(items);
+            AddAuthorizationHeader();
+
+            var response = await _httpClient.GetAsync("api/Inventory/Display items");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var inventoryList = JsonSerializer.Deserialize<List<Inventory>>(content,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                return View(inventoryList);
+            }
+            else
+            {
+                TempData["Error"] = "Failed to fetch inventory items.";
+                return RedirectToAction("Error");
+            }
         }
-        catch (Exception exception)
+        catch (Exception ex)
         {
-            _logger.LogError(exception, "Error retrieving inventory items");
-            return StatusCode(500, $"Internal server error: {exception.Message}");
+            TempData["Error"] = "An error occurred while fetching inventory items.";
+            return RedirectToAction("Error");
         }
     }
 
-    // Add a new item (authorized users only)
-    [HttpPost("Add item")]
-    public IActionResult AddItem([FromBody] AddItemDto itemDto)
+    public IActionResult AddNewItem()
     {
-        _logger.LogInformation("Adding new inventory item: {ItemName}", itemDto.Name);
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddNewItem(AddItemDto model)
+    {
         try
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-                
-            var item = _mapper.Map<Inventory>(itemDto);
-            _context.Inventories.Add(item);
-            _context.SaveChanges();
-            _logger.LogInformation("Successfully added item {ItemId}", item.ItemId);
-            return CreatedAtAction(nameof(GetItems), new { id = item.ItemId }, item);
-        }
-        catch (Exception exception)
-        {
-            _logger.LogError(exception, "Error adding inventory item");
-            return StatusCode(500, $"Internal server error: {exception.Message}");
-        }
-    }
-
-    // Update an existing item (authorized users only)
-    [HttpPut("Upadte item{id}")]
-    public IActionResult UpdateItem(int id, [FromBody] UpdateItemDto itemDto)
-    {
-        _logger.LogInformation("Attempting to update item with ID: {ItemId}", id);
-        try
-        {
-            var existingItem = _context.Inventories.Find(id);
-            if (existingItem == null)
             {
-                _logger.LogWarning("Item with ID {ItemId} not found for update", id);
-                return NotFound();
+                return View(model);
             }
 
-            _mapper.Map(itemDto, existingItem);
-            _context.SaveChanges();
-            _logger.LogInformation("Successfully updated item {ItemId}", id);
-            return Ok(existingItem);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error updating item {ItemId}", id);
-            return StatusCode(500, "Internal server error");
-        }
-    }
+            AddAuthorizationHeader();
 
-    // Get an item by ID (authorized users only)
-    [HttpGet("Get by ID{id}")]
-    public IActionResult GetItemById(int id)
-    {
-        _logger.LogInformation("Retrieving item with ID: {ItemId}", id);
-        try
-        {
-            var item = _context.Inventories.Find(id);
-            if (item == null)
+            var jsonContent = JsonSerializer.Serialize(model);
+            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync("api/Inventory/Add item", content);
+
+            if (response.IsSuccessStatusCode)
             {
-                _logger.LogWarning("Item with ID {ItemId} not found", id);
-                return NotFound();
+                TempData["Message"] = "Item added successfully.";
+                return RedirectToAction("Dashboard");
             }
-
-            _logger.LogInformation("Successfully retrieved item {ItemId}", id);
-            return Ok(item);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error retrieving item {ItemId}", id);
-            return StatusCode(500, "Internal server error");
-        }
-    }
-
-    // Search items (authorized users only)
-    [HttpGet("Search item")]
-    public IActionResult SearchItems([FromQuery] string searchTerm)
-    {
-        _logger.LogInformation("Searching items with term: {SearchTerm}", searchTerm);
-        try
-        {
-            var items = _context.Inventories
-                .Where(i => i.Name.Contains(searchTerm))
-                .ToList();
-
-            _logger.LogInformation("Search completed. Found {Count} items", items.Count);
-            return Ok(items);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error searching items with term {SearchTerm}", searchTerm);
-            return StatusCode(500, "Internal server error");
-        }
-    }
-
-    // Delete an item by ID (authorized users only)
-    [HttpDelete("Delete{id}")]
-    public IActionResult DeleteItem(int id)
-    {
-        _logger.LogInformation("Attempting to delete item with ID: {ItemId}", id);
-        try
-        {
-            var item = _context.Inventories.Find(id);
-            if (item == null)
+            else
             {
-                _logger.LogWarning("Item with ID {ItemId} not found for deletion", id);
-                return NotFound();
+                TempData["Error"] = "Failed to add item.";
+                return View(model);
             }
-
-            _context.Inventories.Remove(item);
-            _context.SaveChanges();
-            _logger.LogInformation("Successfully deleted item {ItemId}", id);
-            return NoContent();
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error deleting item {ItemId}", id);
-            return StatusCode(500, "Internal server error");
+            TempData["Error"] = "An error occurred while adding the item.";
+            return View(model);
         }
     }
+
+
+    public async Task<IActionResult> SearchAnItem(string searchTerm)
+    {
+        try
+        {
+            AddAuthorizationHeader();
+
+            var response = await _httpClient.GetAsync($"api/Inventory/Search item?searchTerm={searchTerm}");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var inventoryList = JsonSerializer.Deserialize<List<Inventory>>(content,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                return View(inventoryList);
+            }
+            else
+            {
+                TempData["Error"] = "Failed to fetch search results.";
+                return RedirectToAction("Dashboard");
+            }
+        }
+        catch (Exception ex)
+        {
+            TempData["Error"] = "An error occurred while searching for inventory items.";
+            return RedirectToAction("Dashboard");
+        }
+    }
+
+    [HttpDelete]
+    public async Task<IActionResult> DeleteItem(int id)
+    {
+        try
+        {
+            AddAuthorizationHeader();
+
+            var response = await _httpClient.DeleteAsync($"api/Inventory/Delete{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                return Json(new { success = true, message = "Item deleted successfully." });
+            }
+            else
+            {
+                return Json(new { success = false, message = "Failed to delete the item." });
+            }
+        }
+        catch (Exception ex)
+        {
+            return Json(new { success = false, message = "An error occurred while deleting the item." });
+        }
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> UpdateItem([FromBody] UpdateItemRequest request)
+    {
+        try
+        {
+            AddAuthorizationHeader();
+
+            var jsonContent = JsonSerializer.Serialize(request.Model);
+            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync($"api/Inventory/UpdateItem/{request.Id}", content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return Json(new { success = true, message = "Item updated successfully." });
+            }
+            else
+            {
+                return Json(new { success = false, message = "Failed to update the item." });
+            }
+        }
+        catch (Exception ex)
+        {
+            return Json(new { success = false, message = $"Error: {ex.Message}" });
+        }
+    }
+
+    // DTO class for request
+    public class UpdateItemRequest
+    {
+        public int Id { get; set; }
+        public UpdateItemDto Model { get; set; } // The model containing name, quantity, price
+    }
+
+
+
+    [HttpGet]
+    public async Task<IActionResult> GetItem(int id)
+    {
+        try
+        {
+            AddAuthorizationHeader();
+
+            var response = await _httpClient.GetAsync($"api/Inventory/getitem/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var item = JsonSerializer.Deserialize<Inventory>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                return Json(item);
+            }
+            else
+            {
+                return Json(new { success = false, message = "Failed to fetch item details." });
+            }
+        }
+        catch (Exception ex)
+        {
+            return Json(new { success = false, message = "An error occurred while fetching the item details." });
+        }
+    }
+
+
+
+
 }
