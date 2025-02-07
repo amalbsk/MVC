@@ -43,7 +43,7 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Quantity</th>
-                    <th>Price</th>
+                    <th>Price Per Piece</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -79,8 +79,8 @@
         function confirmDelete(itemId) {
             if (confirm("Are you sure you want to delete this item?")) {
                 $.ajax({
-                    url: "/Inventory/DeleteItem?id=" + itemId, // Send ID as query parameter
-                    type: "DELETE", // Use DELETE request
+                    url: "/Inventory/DeleteItem?id=" + itemId, 
+                    type: "DELETE", 
                     success: function (response) {
                         if (response.success) {
                             alert(response.message);

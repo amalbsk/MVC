@@ -60,17 +60,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fZkGhwhW0gI3KpALyYrv3J7gjCeStHJgQqsA4Di9qDI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"93981"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022fZkGhwhW0gI3KpALyYrv3J7gjCeStHJgQqsA4Di9qDI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 Jan 2025 11:28:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/InventoryManagementApp/InventoryManagementApp.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InventoryManagementApp.g4s5yh3fyb.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/InventoryManagementApp/InventoryManagementApp.7v7ql6l6ic.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InventoryManagementApp.7v7ql6l6ic.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oFMhbxlOmcQ1XnP9MQwH5\u002BlhmdyN648EtqDiqO9GznQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1140"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oFMhbxlOmcQ1XnP9MQwH5\u002BlhmdyN648EtqDiqO9GznQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 11:20:38 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7v7ql6l6ic"},{"Name":"integrity","Value":"sha256-rXhPw\u002BnsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="},{"Name":"label","Value":"_content/InventoryManagementApp/InventoryManagementApp.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"948"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rXhPw\u002BnsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Feb 2025 09:55:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/InventoryManagementApp/InventoryManagementApp.g4s5yh3fyb.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InventoryManagementApp.g4s5yh3fyb.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/InventoryManagementApp/InventoryManagementApp.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InventoryManagementApp.7v7ql6l6ic.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g4s5yh3fyb"},{"Name":"integrity","Value":"sha256-oFMhbxlOmcQ1XnP9MQwH5\u002BlhmdyN648EtqDiqO9GznQ="},{"Name":"label","Value":"_content/InventoryManagementApp/InventoryManagementApp.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1140"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022oFMhbxlOmcQ1XnP9MQwH5\u002BlhmdyN648EtqDiqO9GznQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 11:20:38 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rXhPw\u002BnsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"948"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rXhPw\u002BnsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Feb 2025 09:55:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/InventoryManagementApp/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gKEQZ2gy1uE3D5cb2akBdGIdPaYn/qyaXqDxAhEPlu8=",
+  "Hash": "Y+Ayj6Sl00fmqQloerBItkxkEn9Xv6r2+nPHQQyaCoA=",
   "Source": "InventoryManagementApp",
   "BasePath": "_content/InventoryManagementApp",
   "Mode": "Default",
@@ -176,12 +176,12 @@
       "OriginalItemSpec": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-g4s5yh3fyb.gz",
+      "Identity": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-7v7ql6l6ic.gz",
       "SourceId": "InventoryManagementApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InventoryManagementApp",
-      "RelativePath": "InventoryManagementApp#[.{fingerprint=g4s5yh3fyb}]?.styles.css.gz",
+      "RelativePath": "InventoryManagementApp#[.{fingerprint=7v7ql6l6ic}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -190,8 +190,8 @@
       "RelatedAsset": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InventoryManagementApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "l7k5vw608i",
-      "Integrity": "kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=",
+      "Fingerprint": "5rxwvsklkb",
+      "Integrity": "H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InventoryManagementApp.styles.css"
@@ -827,12 +827,12 @@
       "OriginalItemSpec": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-g4s5yh3fyb.gz",
+      "Identity": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-7v7ql6l6ic.gz",
       "SourceId": "InventoryManagementApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InventoryManagementApp",
-      "RelativePath": "InventoryManagementApp#[.{fingerprint=g4s5yh3fyb}]!.bundle.scp.css.gz",
+      "RelativePath": "InventoryManagementApp#[.{fingerprint=7v7ql6l6ic}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -841,8 +841,8 @@
       "RelatedAsset": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InventoryManagementApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "l7k5vw608i",
-      "Integrity": "kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=",
+      "Fingerprint": "5rxwvsklkb",
+      "Integrity": "H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InventoryManagementApp.bundle.scp.css"
@@ -1387,8 +1387,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "g4s5yh3fyb",
-      "Integrity": "oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=",
+      "Fingerprint": "7v7ql6l6ic",
+      "Integrity": "rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InventoryManagementApp.styles.css"
@@ -1408,8 +1408,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "g4s5yh3fyb",
-      "Integrity": "oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=",
+      "Fingerprint": "7v7ql6l6ic",
+      "Integrity": "rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InventoryManagementApp.bundle.scp.css"
@@ -3840,13 +3840,13 @@
       ]
     },
     {
-      "Route": "InventoryManagementApp.bundle.scp.css",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-g4s5yh3fyb.gz",
+      "Route": "InventoryManagementApp.7v7ql6l6ic.bundle.scp.css",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-7v7ql6l6ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001818181818"
+          "Quality": "0.002293577982"
         }
       ],
       "ResponseHeaders": [
@@ -3856,19 +3856,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "549"
+          "Value": "435"
         },
         {
           "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3884,18 +3884,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
+          "Value": "W/\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "7v7ql6l6ic"
+        },
+        {
+          "Name": "label",
+          "Value": "InventoryManagementApp.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
         }
       ]
     },
     {
-      "Route": "InventoryManagementApp.bundle.scp.css",
+      "Route": "InventoryManagementApp.7v7ql6l6ic.bundle.scp.css",
       "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InventoryManagementApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3905,7 +3913,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1140"
+          "Value": "948"
         },
         {
           "Name": "Content-Type",
@@ -3913,121 +3921,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
+          "Value": "\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
-        }
-      ]
-    },
-    {
-      "Route": "InventoryManagementApp.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-g4s5yh3fyb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "549"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg="
-        }
-      ]
-    },
-    {
-      "Route": "InventoryManagementApp.g4s5yh3fyb.bundle.scp.css",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-g4s5yh3fyb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001818181818"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "549"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g4s5yh3fyb"
+          "Value": "7v7ql6l6ic"
         },
         {
           "Name": "label",
@@ -4035,13 +3943,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
         }
       ]
     },
     {
-      "Route": "InventoryManagementApp.g4s5yh3fyb.bundle.scp.css",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InventoryManagementApp.bundle.scp.css",
+      "Route": "InventoryManagementApp.7v7ql6l6ic.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-7v7ql6l6ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4050,7 +3958,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1140"
+          "Value": "435"
         },
         {
           "Name": "Content-Type",
@@ -4058,56 +3966,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "g4s5yh3fyb"
-        },
-        {
-          "Name": "label",
-          "Value": "InventoryManagementApp.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
-        }
-      ]
-    },
-    {
-      "Route": "InventoryManagementApp.g4s5yh3fyb.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-g4s5yh3fyb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "549"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4125,7 +3988,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g4s5yh3fyb"
+          "Value": "7v7ql6l6ic"
         },
         {
           "Name": "label",
@@ -4133,18 +3996,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg="
+          "Value": "sha256-H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM="
         }
       ]
     },
     {
-      "Route": "InventoryManagementApp.g4s5yh3fyb.styles.css",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-g4s5yh3fyb.gz",
+      "Route": "InventoryManagementApp.7v7ql6l6ic.styles.css",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-7v7ql6l6ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001818181818"
+          "Quality": "0.002293577982"
         }
       ],
       "ResponseHeaders": [
@@ -4154,15 +4017,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "549"
+          "Value": "435"
         },
         {
           "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4182,13 +4045,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
+          "Value": "W/\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g4s5yh3fyb"
+          "Value": "7v7ql6l6ic"
         },
         {
           "Name": "label",
@@ -4196,12 +4059,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
         }
       ]
     },
     {
-      "Route": "InventoryManagementApp.g4s5yh3fyb.styles.css",
+      "Route": "InventoryManagementApp.7v7ql6l6ic.styles.css",
       "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InventoryManagementApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4211,7 +4074,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1140"
+          "Value": "948"
         },
         {
           "Name": "Content-Type",
@@ -4219,11 +4082,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
+          "Value": "\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4233,7 +4096,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g4s5yh3fyb"
+          "Value": "7v7ql6l6ic"
         },
         {
           "Name": "label",
@@ -4241,13 +4104,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
         }
       ]
     },
     {
-      "Route": "InventoryManagementApp.g4s5yh3fyb.styles.css.gz",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-g4s5yh3fyb.gz",
+      "Route": "InventoryManagementApp.7v7ql6l6ic.styles.css.gz",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-7v7ql6l6ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4256,7 +4119,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "549"
+          "Value": "435"
         },
         {
           "Name": "Content-Type",
@@ -4264,11 +4127,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4286,7 +4149,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g4s5yh3fyb"
+          "Value": "7v7ql6l6ic"
         },
         {
           "Name": "label",
@@ -4294,18 +4157,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg="
+          "Value": "sha256-H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM="
         }
       ]
     },
     {
-      "Route": "InventoryManagementApp.styles.css",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-g4s5yh3fyb.gz",
+      "Route": "InventoryManagementApp.bundle.scp.css",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-7v7ql6l6ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001818181818"
+          "Quality": "0.002293577982"
         }
       ],
       "ResponseHeaders": [
@@ -4315,15 +4178,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "549"
+          "Value": "435"
         },
         {
           "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4343,13 +4206,150 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
+          "Value": "W/\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
+        }
+      ]
+    },
+    {
+      "Route": "InventoryManagementApp.bundle.scp.css",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InventoryManagementApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "948"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
+        }
+      ]
+    },
+    {
+      "Route": "InventoryManagementApp.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\n1584h2c7u-7v7ql6l6ic.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "435"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM="
+        }
+      ]
+    },
+    {
+      "Route": "InventoryManagementApp.styles.css",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-7v7ql6l6ic.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002293577982"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "435"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
         }
       ]
     },
@@ -4364,7 +4364,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1140"
+          "Value": "948"
         },
         {
           "Name": "Content-Type",
@@ -4372,11 +4372,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ=\""
+          "Value": "\"rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4386,13 +4386,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oFMhbxlOmcQ1XnP9MQwH5+lhmdyN648EtqDiqO9GznQ="
+          "Value": "sha256-rXhPw+nsbGazCoTOqCX11RKt6hHVEnFMT7d3qATBE0A="
         }
       ]
     },
     {
       "Route": "InventoryManagementApp.styles.css.gz",
-      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-g4s5yh3fyb.gz",
+      "AssetFile": "C:\\Users\\amal.biju\\vscode\\MVC\\InventoryManagementApp\\obj\\Debug\\net9.0\\compressed\\3r9asq6uf4-7v7ql6l6ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4401,7 +4401,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "549"
+          "Value": "435"
         },
         {
           "Name": "Content-Type",
@@ -4409,11 +4409,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg=\""
+          "Value": "\"H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 11:20:38 GMT"
+          "Value": "Thu, 06 Feb 2025 09:55:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4431,7 +4431,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kVQti+b0AmMaEq5MgVXS0S5flpb5FhlrDLj9Y4o/5Zg="
+          "Value": "sha256-H54Lg08Pl23rS8RsrZfS/rK1jEtT/VO97i4KVy03UxM="
         }
       ]
     },

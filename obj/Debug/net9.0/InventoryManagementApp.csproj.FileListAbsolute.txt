@@ -85,6 +85,7 @@ C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\scopedcss\
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\scopedcss\bundle\InventoryManagementApp.styles.css
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\scopedcss\projectbundle\InventoryManagementApp.bundle.scp.css
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\mz6616xyu9-b9sayid5wm.gz
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\l5ng4fv1if-d620n3ffqs.gz
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\d9g90tpffc-61n19gt1b8.gz
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\zpm7rlrtnd-bqjiyaj88i.gz
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\yub0oy7fub-c2jlpeoesf.gz
@@ -145,8 +146,6 @@ C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\nf37t657gu-muycvpuwrr.gz
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\mptm61d6rt-87fc7y1x7t.gz
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\s125uupai7-mlv21k5csn.gz
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\3r9asq6uf4-g4s5yh3fyb.gz
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\n1584h2c7u-g4s5yh3fyb.gz
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -162,4 +161,5 @@ C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\refint\Inv
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\InventoryManagementApp.pdb
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\InventoryManagementApp.genruntimeconfig.cache
 C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\ref\InventoryManagementApp.dll
-C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\l5ng4fv1if-d620n3ffqs.gz
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\3r9asq6uf4-7v7ql6l6ic.gz
+C:\Users\amal.biju\vscode\MVC\InventoryManagementApp\obj\Debug\net9.0\compressed\n1584h2c7u-7v7ql6l6ic.gz

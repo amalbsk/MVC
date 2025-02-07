@@ -28,6 +28,10 @@ public class InventoryController : Controller
 
     public async Task<IActionResult> Dashboard()
     {
+        if (!HttpContext.Session.TryGetValue("AuthToken", out _))
+        {
+            return RedirectToAction("Login", "Auth");
+        }
         try
         {
             AddAuthorizationHeader();
@@ -55,6 +59,10 @@ public class InventoryController : Controller
 
     public IActionResult AddNewItem()
     {
+        if (!HttpContext.Session.TryGetValue("AuthToken", out _))
+        {
+            return RedirectToAction("Login", "Auth");
+        }
         return View();
     }
 
@@ -96,6 +104,10 @@ public class InventoryController : Controller
 
     public async Task<IActionResult> SearchAnItem(string searchTerm)
     {
+        if (!HttpContext.Session.TryGetValue("AuthToken", out _))
+        {
+            return RedirectToAction("Login", "Auth");
+        }
         try
         {
             AddAuthorizationHeader();
@@ -125,6 +137,10 @@ public class InventoryController : Controller
     [HttpDelete]
     public async Task<IActionResult> DeleteItem(int id)
     {
+        if (!HttpContext.Session.TryGetValue("AuthToken", out _))
+        {
+            return RedirectToAction("Login", "Auth");
+        }
         try
         {
             AddAuthorizationHeader();
@@ -148,6 +164,10 @@ public class InventoryController : Controller
     [HttpPost]
     public async Task<IActionResult> UpdateItem([FromBody] UpdateItemRequest request)
     {
+        if (!HttpContext.Session.TryGetValue("AuthToken", out _))
+        {
+            return RedirectToAction("Login", "Auth");
+        }
         try
         {
             AddAuthorizationHeader();
@@ -184,6 +204,10 @@ public class InventoryController : Controller
     [HttpGet]
     public async Task<IActionResult> GetItem(int id)
     {
+        if (!HttpContext.Session.TryGetValue("AuthToken", out _))
+        {
+            return RedirectToAction("Login", "Auth");
+        }
         try
         {
             AddAuthorizationHeader();
